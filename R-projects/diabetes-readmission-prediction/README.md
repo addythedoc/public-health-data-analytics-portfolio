@@ -1,76 +1,72 @@
-**Predicting 30-Day Hospital Readmission Among Diabetic Patients**
 
-Tools: R (tidyverse, janitor, caret, pROC, randomForest)
-Domain: Clinical Epidemiology, Health Services Research
-Data Source: UCI Diabetes 130-US Hospitals Dataset
+# Predicting 30-Day Hospital Readmission Among Diabetic Patients
 
-**Project Overview**
+**Tools:** R (tidyverse, janitor, caret, pROC, randomForest)
+**Domain:** Clinical Epidemiology, Health Services Research
+**Data Source:** UCI Diabetes 130-US Hospitals Dataset
 
-This project analyzes factors associated with 30-day hospital readmission among diabetic patients and develops baseline predictive models to estimate readmission risk using routinely collected inpatient data. The goal is to evaluate how well administrative and clinical variables alone can predict short-term readmission.
+---
 
-**Data**
+## Project Overview
 
-Publicly available dataset from the UCI Machine Learning Repository
+This project analyzes factors associated with **30-day hospital readmission among diabetic patients** and develops baseline predictive models to estimate readmission risk using routinely collected inpatient data. The goal is to evaluate how well administrative and clinical variables alone can predict short-term readmission.
 
-~100,000 inpatient encounters from 130 U.S. hospitals (1999–2008)
+---
 
-Adult patients with diabetes-related diagnoses
+## Data
 
-Outcome: Readmission within 30 days of discharge
+* Publicly available dataset from the **UCI Machine Learning Repository**
+* ~100,000 inpatient encounters from **130 U.S. hospitals** (1999–2008)
+* Adult patients with diabetes-related diagnoses
+* **Outcome:** Readmission within 30 days of discharge
+* Raw and processed data files are **not included** due to file size and best practices
 
-Raw and processed data files are not included due to file size and best practices
+---
 
-**Study Design & Methods**
+## Study Design & Methods
 
-Data cleaning and feature engineering using tidyverse and janitor
+* Data cleaning and feature engineering using **tidyverse** and **janitor**
+* Exploratory data analysis to assess patient and hospitalization characteristics
+* Binary classification modeling:
 
-Exploratory data analysis to assess patient and hospitalization characteristics
+  * Logistic regression
+  * Random forest
+* Model evaluation included:
 
-Binary classification modeling:
-
-Logistic regression
-
-Random forest
-
-Model evaluation included:
-
-ROC–AUC
-
-Confusion matrices
-
-Feature relevance assessed using random forest variable importance
+  * ROC–AUC
+  * Confusion matrices
+* Feature relevance assessed using **random forest variable importance**
 
 All scripts are fully reproducible using relative file paths.
 
-**Key Findings**
+---
 
-Approximately 10–12% of inpatient encounters resulted in 30-day readmission
+## Key Findings
 
-Higher readmission risk was associated with:
+* Approximately **10–12%** of inpatient encounters resulted in 30-day readmission
+* Higher readmission risk was associated with:
 
-Longer hospital stays
+  * Longer hospital stays
+  * Greater medication burden
+  * Higher number of laboratory procedures
+  * Increased diagnostic complexity
+  * Older age groups
+* Logistic regression and random forest models showed **modest predictive performance**
+  (**AUC ≈ 0.55–0.58**), highlighting the limitations of administrative data for readmission prediction
 
-Greater medication burden
+---
 
-Higher number of laboratory procedures
+## Limitations
 
-Increased diagnostic complexity
+* Strong class imbalance constrained predictive performance
+* Administrative diagnosis and procedure codes lack clinical granularity
+* No incorporation of outpatient care, social determinants of health, or longitudinal patient history
 
-Older age groups
+---
 
-Logistic regression and random forest models showed modest predictive performance
-(AUC ≈ 0.55–0.58), highlighting the limitations of administrative data for readmission prediction
+## Repository Structure
 
-**Limitations**
-
-Strong class imbalance constrained predictive performance
-
-Administrative diagnosis and procedure codes lack clinical granularity
-
-No incorporation of outpatient care, social determinants of health, or longitudinal patient history
-
-**Repository Structure**
-
+```
 diabetes-readmission-prediction/
 ├── README.md
 ├── scripts/
@@ -80,18 +76,20 @@ diabetes-readmission-prediction/
 ├── outputs/
 │   ├── figures/             # Key visualizations
 │   └── tables/              # Model outputs & variable importance
+```
 
-**Skills Demonstrated**
+---
 
-End-to-end analytical workflow in R
+## Skills Demonstrated
 
-Reproducible project structuring
+* End-to-end analytical workflow in R
+* Reproducible project structuring
+* Data wrangling and preprocessing
+* Exploratory data analysis and visualization
+* Logistic regression and tree-based modeling
+* Model evaluation and interpretation in a healthcare context
 
-Data wrangling and preprocessing
+---
 
-Exploratory data analysis and visualization
 
-Logistic regression and tree-based modeling
-
-Model evaluation and interpretation in a healthcare context
 
