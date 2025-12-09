@@ -1,0 +1,65 @@
+# R/02_eda.R
+# STEP 2 — EXPLORATORY DATA ANALYSIS
+
+library(tidyverse)
+
+# Helper: save plots to outputs/plots
+save_plot <- function(plot_obj, name) {
+  dir.create("C:/Users/neplu/Downloads/hospital readmission_r/outputs/plots",
+             recursive = TRUE, showWarnings = FALSE)
+  
+  ggsave(
+    filename = paste0(name, ".png"),
+    plot = plot_obj,
+    path = "C:/Users/neplu/Downloads/hospital readmission_r/outputs/plots",
+    width = 8,
+    height = 6,
+    dpi = 300
+  )
+}
+
+# 1. Load the cleaned dataset 
+df <- read.csv("C:/Users/neplu/Downloads/hospital readmission_r/data/processed/diabetes_processed.csv")
+
+# 2. Look at structure
+str(df)
+
+# 3. Outcome distribution (readmitted_30)
+df %>%
+  count(readmitted_30) %>%
+  mutate(pct = round(100 * n / sum(n), 1))
+
+# 4. Summary of key numeric variables
+df %>%
+  select(time_in_hospital, num_lab_procedures, num_medications, number_diagnoses) %>%
+  summary()
+
+# 5. Boxplot: time in hospital vs readmission
+p_box <- ggplot(df, aes(x = readmitted_30, y = time_in_hospital)) +
+  geom_boxplot() +
+  labs(
+    title = "Time in Hospital by Readmission Status",
+    x = "Readmitted within 30 days",
+    y = "Time in Hospital (days)"
+  )
+
+p_box          # show in Plots pane
+save_plot(p_box, "time_in_hospital_by_readmission")
+
+# 6. Bar plot: readmission rate by age group
+p_age <- df %>%
+  group_by(age, readmitted_30) %>%
+  summarise(n = n(), .groups = "drop") %>%
+  group_by(age) %>%
+  mutate(pct = n / sum(n)) %>%
+  ggplot(aes(x = age, y = pct, fill = readmitted_30)) +
+  geom_col(position = "dodge") +
+  labs(
+    title = "Readmission Proportion by Age Group",
+    x = "Age group",
+    y = "Proportion"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+p_age
+save_plot(p_age, "readmission_proportion_by_age")
