@@ -63,7 +63,8 @@ Findings highlight structural and delivery-related barriers to early breastfeedi
 
 ## Files
 - `analysis.sas` – Data cleaning, variable recoding, descriptive, bivariate, and regression analyses  
-- `manuscript.pdf` – Full research manuscript with tables and results  
+- `manuscript.pdf` – Full research manuscript
+- `tables.pdf` – Formatted results tables exported from SAS (descriptive, bivariate, and regression outputs)  
 
 ---
 
