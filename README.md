@@ -9,7 +9,7 @@ The work emphasizes **infectious disease surveillance, epidemiologic analysis, d
 - **Focus:** Early initiation of breastfeeding in Ethiopia using DHS data  
 - **Methods & Tools:** SAS (PROC SURVEYFREQ, PROC SURVEYLOGISTIC)  
 - **Highlights:** Complex survey design handling, DHS variable recoding, survey-weighted regression analysis  
-- **Repository:** https://github.com/yourusername/breastfeeding-nutritional-counseling-ethiopia  
+- **Repository:** https://github.com/addythedoc/sas-edhs-epidemiology-analysis  
 
 ### 2. Diabetes Readmission Prediction (R)
 - **Focus:** 30-day hospital readmission among patients with diabetes  
