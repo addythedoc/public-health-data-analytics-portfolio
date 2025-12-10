@@ -15,7 +15,7 @@ The work emphasizes **infectious disease surveillance, epidemiologic analysis, d
 - **Focus:** 30-day hospital readmission among patients with diabetes  
 - **Methods & Tools:** R (tidyverse, caret, pROC, randomForest)  
 - **Highlights:** End-to-end analytical workflow including data cleaning, EDA, logistic regression, random forest modeling, and performance evaluation (ROC–AUC)  
-- **Repository:** https://github.com/yourusername/diabetes-readmission-prediction  
+- **Repository:** https://github.com/addythedoc/diabetes-readmission-prediction 
 
 ### 3. Influenza Vaccine Coverage vs 70% Target (SQL + Tableau)
 - **Focus:** State-level influenza vaccination coverage compared to the Healthy People 70% vaccination target  
