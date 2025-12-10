@@ -61,18 +61,6 @@ To view the dashboard:
 
 ---
 
-## Repository Structure
-influenza-vaccine-coverage/
-├── data/
-│ └── Influenza_Vaccination_Coverage.csv
-├── scripts/
-│ └── vaccine_coverage_pipeline.sql
-├── dashboard/
-│ └── Influenza_vaccine_coverage.twbx
-└── README.md
-
-
----
 
 ## Public Health Relevance
 Influenza vaccination is a cornerstone of preventive health.  
