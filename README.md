@@ -21,7 +21,7 @@ The work emphasizes **infectious disease surveillance, epidemiologic analysis, d
 - **Focus:** State-level influenza vaccination coverage compared to the Healthy People 70% vaccination target  
 - **Methods & Tools:** MySQL, Tableau  
 - **Highlights:** SQL-based data transformation pipeline supporting a Tableau dashboard to identify geographic vaccination gaps  
-- **Repository:** https://github.com/yourusername/influenza-vaccine-coverage  
+- **Repository:** https://github.com/addythedoc/influenza-vaccine-coverage-analysis  
 
 ## Project Domains
 - Maternal and child health  
