@@ -1,78 +1,137 @@
-# Association Between Antenatal Nutritional Counseling and Timely Initiation of Breastfeeding in Ethiopia
 
-**Tools:** SAS 9.4 (PROC SURVEYFREQ, PROC SURVEYLOGISTIC)  
-**Domain:** Maternal & Child Health, Epidemiology  
-**Data Source:** Ethiopia Demographic and Health Survey (EDHS), 2016
+# Antenatal Nutritional Counseling and Timely Initiation of Breastfeeding in Ethiopia
 
----
+*A population-based survey analysis*
 
-## Project Overview
-This project examines whether receipt of nutritional counseling during antenatal care is associated with timely initiation of breastfeeding (within one hour of birth) among women in Ethiopia using nationally representative DHS data.
+## Population Health Context
 
----
+Early initiation of breastfeeding within one hour of birth is a critical maternal and child health indicator, associated with reduced neonatal mortality and improved early-life outcomes. Antenatal care provides an important opportunity to promote optimal infant feeding practices; however, the effectiveness of antenatal nutritional counseling depends on broader **health system and delivery-level factors**.
 
-## Data
-- Secondary, de-identified survey data from the 2016 Ethiopia DHS  
-- Sample size: **4,074 women with children aged 0–23 months**  
-- Complex survey design incorporating stratification, clustering, and sampling weights  
-- Raw DHS microdata are restricted and not included in this repository  
+This analysis uses nationally representative survey data to assess whether antenatal nutritional counseling translates into timely breastfeeding initiation, while accounting for socio-demographic and delivery-related determinants.
 
 ---
 
-## Study Design & Methods
-- Cross-sectional analysis  
-- Survey-weighted descriptive statistics  
-- Bivariate analysis using Rao–Scott chi-square tests  
-- Unadjusted and multivariable survey-weighted logistic regression  
-- All analyses account for DHS sampling design (weights, strata, and clusters)  
+## Project Objective
+
+To evaluate the association between receipt of antenatal nutritional counseling and timely initiation of breastfeeding among women in Ethiopia, using survey-weighted methods appropriate for complex population-based data.
 
 ---
 
-## Key Variables
+## Data Source & Study Population
 
-### Outcome
-- Timely initiation of breastfeeding (within 1 hour of birth)
+* **Dataset:** Ethiopia Demographic and Health Survey (EDHS), 2016
+* **Design:** Nationally representative, cross-sectional household survey
+* **Sample:** 4,074 women with children aged 0–23 months
+* **Survey Design:** Stratified, clustered sampling with probability weights
 
-### Primary Exposure
-- Receipt of nutritional counseling during antenatal care
+Restricted DHS microdata are not included in this repository.
 
-### Covariates
-- Maternal age, parity, education, marital status  
-- Household wealth index  
-- Place of residence (urban/rural)  
-- Number of antenatal visits  
-- Place of delivery  
-- Cesarean section delivery  
-- Skilled birth attendance  
-- Sex of the child  
+---
+
+## Study Design & Methodology
+
+### Analytical Approach
+
+* Survey-weighted descriptive statistics to characterise the study population
+* Bivariate associations assessed using **Rao–Scott chi-square tests**
+* Unadjusted and multivariable **survey-weighted logistic regression**
+
+All analyses appropriately account for DHS sampling weights, strata, and clusters to ensure valid population-level inference.
+
+### Key Measures
+
+**Outcome**
+
+* Timely initiation of breastfeeding (within one hour of birth)
+
+**Primary Exposure**
+
+* Receipt of nutritional counseling during antenatal care
+
+**Covariates**
+
+* Maternal age, parity, education, and marital status
+* Household wealth index
+* Urban vs rural residence
+* Number of antenatal visits
+* Place of delivery and skilled birth attendance
+* Cesarean section delivery
+* Sex of the child
 
 ---
 
 ## Key Findings
-- Nutritional counseling during antenatal care was **not significantly associated** with timely initiation of breastfeeding  
-- Higher parity (2–4 children and ≥5 children) was associated with **higher odds** of timely breastfeeding initiation  
-- Cesarean section delivery was **strongly associated with lower odds** of timely initiation  
-- Mothers aged 35–49 years showed a **reduced likelihood** of timely breastfeeding initiation  
+
+* Receipt of antenatal nutritional counseling was **not significantly associated** with timely initiation of breastfeeding after adjustment
+* Higher parity (2–4 children and ≥5 children) was associated with **higher odds** of early initiation
+* Cesarean section delivery showed a **strong negative association** with timely breastfeeding initiation
+* Mothers aged 35–49 years had a **lower likelihood** of initiating breastfeeding within one hour
 
 ---
 
-## Public Health Relevance
-Findings highlight structural and delivery-related barriers to early breastfeeding initiation, particularly among women delivering by cesarean section. Results emphasize the importance of strengthening post-delivery support and skilled birth attendance to improve early breastfeeding practices.
+## Programmatic & Policy Implications
+
+* Antenatal counseling alone may be **insufficient** to improve early breastfeeding initiation without supportive delivery and postnatal practices
+* Delivery-related factors, particularly cesarean section, represent critical barriers requiring targeted interventions
+* Findings support the need for:
+
+  * Strengthened **post-delivery breastfeeding support**
+  * Improved integration between antenatal counseling and maternity ward practices
+  * Emphasis on skilled birth attendance and immediate postnatal care protocols
 
 ---
 
-## Files
-- `analysis.sas` – Data cleaning, variable recoding, descriptive, bivariate, and regression analyses  
-- `manuscript.pdf` – Full research manuscript with tables and narrative results  
-- `tables.pdf` – Formatted results tables exported from SAS (descriptive, bivariate, and regression outputs)  
+## Strengths & Limitations
+
+### Strengths
+
+* Use of nationally representative survey data
+* Appropriate handling of complex survey design
+* Policy-relevant maternal and child health outcomes
+
+### Limitations
+
+* Cross-sectional design limits causal inference
+* Self-reported measures may be subject to recall bias
+* Quality and content of antenatal counseling could not be assessed
 
 ---
 
-## Skills Demonstrated
-- Survey-weighted analysis in SAS  
-- DHS data management and variable construction  
-- Rao–Scott chi-square testing  
-- Survey-adjusted logistic regression (unadjusted and multivariable)  
-- Epidemiologic interpretation of results  
+## Tools & Methods
+
+* **SAS 9.4**
+
+  * PROC SURVEYFREQ
+  * PROC SURVEYLOGISTIC
+* Survey-weighted regression modelling
+* DHS data management and variable construction
+
+---
+
+## Repository Contents
+
+```
+antenatal-nutrition-breastfeeding/
+├── analysis.sas        # Data cleaning, variable recoding, survey analyses
+├── manuscript.pdf     # Full research manuscript
+├── tables.pdf         # Formatted descriptive and regression tables
+```
+
+---
+
+## How This Work Can Be Used in Practice
+
+* Inform maternal and child health program design
+* Identify delivery-level barriers to optimal infant feeding practices
+* Support monitoring and evaluation of antenatal and postnatal care interventions
+* Provide evidence for strengthening facility-based breastfeeding support policies
+
+---
+
+
+
+
+
+
 
 
