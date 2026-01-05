@@ -1,43 +1,116 @@
+
 # Public Health & Healthcare Analytics Portfolio
 
-A curated portfolio of applied public health and healthcare analytics projects developed using **SAS, R, and SQL**.  
-The work emphasizes **infectious disease surveillance, epidemiologic analysis, data cleaning, statistical modeling, and dashboard-ready insights**, using real-world public health and healthcare datasets.
+Applied public health and healthcare analytics projects focused on **disease surveillance, population health, and health system performance**.
+This portfolio demonstrates end-to-end analytical workflows used to support **evidence-based public health decision-making**, using SAS, R, and SQL on real-world health datasets.
 
-## Featured Projects
+The work reflects practical skills relevant to **government health departments, research organisations, and health consultancies**, including data cleaning, statistical modelling, and dashboard-ready insights.
 
-### 1. Breastfeeding & Antenatal Nutritional Counseling (SAS)
-- **Focus:** Early initiation of breastfeeding in Ethiopia using DHS data  
-- **Methods & Tools:** SAS (PROC SURVEYFREQ, PROC SURVEYLOGISTIC)  
-- **Highlights:** Complex survey design handling, DHS variable recoding, survey-weighted regression analysis  
-- **Repository:** https://github.com/addythedoc/sas-edhs-epidemiology-analysis  
+---
 
-### 2. Diabetes Readmission Prediction (R)
-- **Focus:** 30-day hospital readmission among patients with diabetes  
-- **Methods & Tools:** R (tidyverse, caret, pROC, randomForest)  
-- **Highlights:** End-to-end analytical workflow including data cleaning, EDA, logistic regression, random forest modeling, and performance evaluation (ROC–AUC)  
-- **Repository:** https://github.com/addythedoc/diabetes-readmission-prediction 
+## 🔍 Featured Projects
 
-### 3. Influenza Vaccine Coverage vs 70% Target (SQL + Tableau)
-- **Focus:** State-level influenza vaccination coverage compared to the Healthy People 70% vaccination target  
-- **Methods & Tools:** MySQL, Tableau  
-- **Highlights:** SQL-based data transformation pipeline supporting a Tableau dashboard to identify geographic vaccination gaps  
-- **Repository:** https://github.com/addythedoc/influenza-vaccine-coverage-analysis  
+### 1️⃣ Breastfeeding & Antenatal Nutritional Counseling — *SAS*
 
-## Project Domains
-- Maternal and child health  
-- Infectious disease surveillance and epidemiology  
-- Hospital utilization and readmission risk  
-- Preventive care and vaccination coverage  
+**Public Health Focus:**
+Early initiation of breastfeeding in Ethiopia using Demographic and Health Survey (DHS) data.
 
-## Tools & Methods
-- **SAS:** Survey-weighted analysis, regression modeling, DHS data handling  
-- **R:** Data wrangling, exploratory analysis, statistical and machine learning models  
-- **SQL:** Data aggregation, transformation pipelines, and analytics for dashboards  
+**What this project demonstrates**
 
-## Repository Structure
-- `SAS-projects/` — Survey-based epidemiologic analyses  
-- `R-projects/` — End-to-end analytical and predictive modeling workflows  
-- `SQL-projects/` — Data pipelines and analytics supporting public health dashboards  
+* Handling of **complex survey design** data
+* Survey-weighted descriptive and regression analysis
+* Translation of epidemiologic findings into maternal & child health insights
 
-Each project is organized in a dedicated folder with documentation, scripts, and outputs where applicable.
+**Methods & Tools**
+
+* SAS (PROC SURVEYFREQ, PROC SURVEYLOGISTIC)
+* DHS data management and variable recoding
+
+**Key Outputs**
+
+* Survey-adjusted estimates of breastfeeding initiation
+* Identification of antenatal counselling as a key predictor
+
+🔗 Repository: [https://github.com/addythedoc/sas-edhs-epidemiology-analysis](https://github.com/addythedoc/sas-edhs-epidemiology-analysis)
+
+---
+
+### 2️⃣ Diabetes 30-Day Readmission Risk — *R*
+
+**Health Systems Focus:**
+Prediction of 30-day hospital readmission among patients with diabetes.
+
+**What this project demonstrates**
+
+* End-to-end analytical workflow from raw data to model evaluation
+* Comparison of traditional statistical methods with machine learning
+* Model performance assessment for healthcare decision support
+
+**Methods & Tools**
+
+* R (tidyverse, caret, pROC, randomForest)
+* Logistic regression and random forest models
+
+**Key Outputs**
+
+* ROC–AUC–based model comparison
+* Identification of clinical and utilization risk factors for readmission
+
+🔗 Repository: [https://github.com/addythedoc/diabetes-readmission-prediction](https://github.com/addythedoc/diabetes-readmission-prediction)
+
+---
+
+### 3️⃣ Influenza Vaccination Coverage vs 70% Target — *SQL + Tableau*
+
+**Population Health Focus:**
+State-level influenza vaccination coverage compared with the Healthy People 70% target.
+
+**What this project demonstrates**
+
+* SQL-based data transformation pipelines
+* Analytical structuring of health indicators for dashboards
+* Identification of geographic gaps in preventive care uptake
+
+**Methods & Tools**
+
+* MySQL
+* Tableau (dashboard-ready outputs)
+
+**Key Outputs**
+
+* Cleaned, aggregated vaccination metrics
+* Visual identification of underperforming states
+
+🔗 Repository: [https://github.com/addythedoc/influenza-vaccine-coverage-analysis](https://github.com/addythedoc/influenza-vaccine-coverage-analysis)
+
+---
+
+## 🧠 Project Domains
+
+* Infectious disease surveillance & epidemiology
+* Maternal and child health
+* Hospital utilisation and readmission risk
+* Preventive care and vaccination coverage
+
+---
+
+## 🛠️ Tools & Methods
+
+* **SAS:** Survey-weighted analysis, regression modelling, DHS data handling
+* **R:** Data wrangling, exploratory analysis, statistical and machine learning models
+* **SQL:** Data aggregation, transformation pipelines, analytics for dashboards
+
+---
+
+## 📂 Repository Structure
+
+```
+SAS-projects/   → Survey-based epidemiologic analyses
+R-projects/     → End-to-end analytical and predictive modeling workflows
+SQL-projects/   → Data pipelines supporting public health dashboards
+```
+
+Each project includes clear documentation, reproducible scripts, and analytical outputs where applicable.
+
+---
 
