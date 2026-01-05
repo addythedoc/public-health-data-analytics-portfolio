@@ -137,10 +137,7 @@ diabetes-readmission-prediction/
 
 
 
-### 🔜 Next step
 
-Paste your **SAS (DHS breastfeeding)** README next.
-That one will be your **public-health / epidemiology flagship**, while this becomes your **health systems analytics flagship**.
 
 
 
